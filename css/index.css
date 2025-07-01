@@ -1,0 +1,41 @@
+body {
+    margin: 30px auto;
+    text-align: center;
+    border: #000000 1px solid;
+    border-radius: 25px;
+    width: 419px;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    margin: 6px 0;
+    background: #4F5554;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover,
+.btn:visited:hover {
+    background: #313534;
+}
+
+.btn:visited {
+    background: #bfc9c7;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}

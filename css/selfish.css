@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #fff;
+    color: #292929;
+}
+.main-container {
+    width: 1440px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    width: 100%;
+    background: #D7D8D9;
+    position: relative;
+}
+.header-bar {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #D7D8D9;
+    padding: 0 40px;
+}
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+.nav-item {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+.nav-item:hover {
+    color: #BA3632;
+}
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+.social-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 18px;
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+.icon-facebook::before {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.icon-twitter::before {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.icon-instagram::before {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+/* 헤더 타이틀 */
+.header-title-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    margin: 40px 0 20px 0;
+}
+.header-title {
+    color: #BA3632;
+    font-size: 42px;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 1.1;
+    margin: 0;
+}
+.header-subtitle {
+    color: #F2B8A2;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* 디자인 섹션 */
+.section-design {
+    background: #fff;
+    padding: 0;
+}
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.design-item {
+    position: relative;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.design-item:last-child {
+    border-right: none;
+}
+.design-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.design-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* About/Design 설명 */
+.section-about {
+    background: #fff;
+    padding: 40px 0 0 0;
+}
+.about-inner {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-title {
+    color: #BA3632;
+    font-size: 42px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+.section-text {
+    color: #777;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    width: 540px;
+    text-align: justify;
+}
+
+/* Portfolio */
+.section-portfolio {
+    background: #f8f6f6;
+    padding: 40px 0 60px 0;
+    text-align: center;
+}
+.portfolio-title {
+    text-align: left;
+    margin-left: 120px;
+}
+.portfolio-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0 20px 0;
+}
+.slider-arrow {
+    background: #e0e0e0;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+    color: #666;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.slider-arrow:hover {
+    background: #BA3632;
+    color: #fff;
+}
+.portfolio-list {
+    display: flex;
+    gap: 20px;
+}
+.portfolio-item {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.portfolio-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.portfolio-caption {
+    background: rgba(34,34,34,0.8);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.portfolio-more {
+    margin-top: 24px;
+    padding: 12px 48px;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background 0.2s;
+}
+.portfolio-more:hover {
+    background: #BA3632;
+}
+
+/* Blog, Contact, Subscribe */
+.section-blog-contact {
+    background: #3b4140;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 120px;
+    color: #fff;
+}
+.blog, .contact, .subscribe {
+    flex: 1;
+    margin: 0 20px;
+}
+.blog-title, .contact-title, .subscribe-title {
+    color: #E35765;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.blog-list, .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.blog-item, .contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.blog-item-title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.blog-item-date {
+    color: #9D9D9D;
+    font-size: 12px;
+    font-weight: 400;
+}
+.contact-info {
+    color: #9D9D9D;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.subscribe-input {
+    width: 100%;
+    height: 40px;
+    padding: 8px 13px;
+    background: #4F5554;
+    outline: 1px #6D6D6D solid;
+    outline-offset: -1px;
+    color: rgba(255,255,255,0.8);
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    border: none;
+    margin-bottom: 0;
+}
+.subscribe-input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+.subscribe-btn {
+    background: #E35765;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.subscribe-btn:hover {
+    background: #BA3632;
+}
+
+/* Footer */
+.footer {
+    background: #1E2423;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: auto;
+}
+
+/* Font Awesome (for icons) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
